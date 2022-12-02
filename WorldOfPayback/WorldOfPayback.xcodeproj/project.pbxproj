@@ -14,6 +14,7 @@
 		DE5AEADD293AAF3D007E62E8 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = DE5AEADC293AAF3D007E62E8 /* RxCocoa */; };
 		DE5AEADF293AAF3D007E62E8 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = DE5AEADE293AAF3D007E62E8 /* RxRelay */; };
 		DE5AEAE1293AAF3D007E62E8 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DE5AEAE0293AAF3D007E62E8 /* RxSwift */; };
+		DE5AEAE3293AB05F007E62E8 /* PBTransactions.json in Resources */ = {isa = PBXBuildFile; fileRef = DE5AEAE2293AB05F007E62E8 /* PBTransactions.json */; };
 		DECD92E5293A987300D0C57C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD92E4293A987300D0C57C /* AppDelegate.swift */; };
 		DECD92E7293A987300D0C57C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD92E6293A987300D0C57C /* SceneDelegate.swift */; };
 		DECD92E9293A987300D0C57C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD92E8293A987300D0C57C /* ViewController.swift */; };
@@ -26,6 +27,7 @@
 		DE5AEAD5293AAD75007E62E8 /* Alias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alias.swift; sourceTree = "<group>"; };
 		DE5AEAD7293AAD90007E62E8 /* TransactionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetail.swift; sourceTree = "<group>"; };
 		DE5AEAD9293AADBF007E62E8 /* TransactionValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionValue.swift; sourceTree = "<group>"; };
+		DE5AEAE2293AB05F007E62E8 /* PBTransactions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PBTransactions.json; sourceTree = "<group>"; };
 		DECD92E1293A987300D0C57C /* WorldOfPayback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldOfPayback.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DECD92E4293A987300D0C57C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DECD92E6293A987300D0C57C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 		DECD92F9293A997C00D0C57C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DE5AEAE2293AB05F007E62E8 /* PBTransactions.json */,
 				DECD92ED293A987400D0C57C /* Assets.xcassets */,
 				DECD92EF293A987400D0C57C /* LaunchScreen.storyboard */,
 			);
@@ -173,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DECD92F1293A987400D0C57C /* LaunchScreen.storyboard in Resources */,
+				DE5AEAE3293AB05F007E62E8 /* PBTransactions.json in Resources */,
 				DECD92EE293A987400D0C57C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
