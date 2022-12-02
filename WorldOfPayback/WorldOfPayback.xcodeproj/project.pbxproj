@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE5AEAD4293AAD48007E62E8 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEAD3293AAD48007E62E8 /* Transaction.swift */; };
+		DE5AEAD6293AAD75007E62E8 /* Alias.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEAD5293AAD75007E62E8 /* Alias.swift */; };
+		DE5AEAD8293AAD90007E62E8 /* TransactionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEAD7293AAD90007E62E8 /* TransactionDetail.swift */; };
+		DE5AEADA293AADBF007E62E8 /* TransactionValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEAD9293AADBF007E62E8 /* TransactionValue.swift */; };
 		DECD92E5293A987300D0C57C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD92E4293A987300D0C57C /* AppDelegate.swift */; };
 		DECD92E7293A987300D0C57C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD92E6293A987300D0C57C /* SceneDelegate.swift */; };
 		DECD92E9293A987300D0C57C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD92E8293A987300D0C57C /* ViewController.swift */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE5AEAD3293AAD48007E62E8 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		DE5AEAD5293AAD75007E62E8 /* Alias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alias.swift; sourceTree = "<group>"; };
+		DE5AEAD7293AAD90007E62E8 /* TransactionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetail.swift; sourceTree = "<group>"; };
+		DE5AEAD9293AADBF007E62E8 /* TransactionValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionValue.swift; sourceTree = "<group>"; };
 		DECD92E1293A987300D0C57C /* WorldOfPayback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldOfPayback.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DECD92E4293A987300D0C57C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DECD92E6293A987300D0C57C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +43,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE5AEAD2293AAD2B007E62E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE5AEAD3293AAD48007E62E8 /* Transaction.swift */,
+				DE5AEAD5293AAD75007E62E8 /* Alias.swift */,
+				DE5AEAD7293AAD90007E62E8 /* TransactionDetail.swift */,
+				DE5AEAD9293AADBF007E62E8 /* TransactionValue.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		DECD92D8293A987300D0C57C = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +73,7 @@
 		DECD92E3293A987300D0C57C /* WorldOfPayback */ = {
 			isa = PBXGroup;
 			children = (
+				DE5AEAD2293AAD2B007E62E8 /* Model */,
 				DECD92F8293A995200D0C57C /* Application */,
 				DECD92E8293A987300D0C57C /* ViewController.swift */,
 				DECD92F9293A997C00D0C57C /* Resources */,
@@ -152,7 +172,11 @@
 			files = (
 				DECD92E9293A987300D0C57C /* ViewController.swift in Sources */,
 				DECD92E5293A987300D0C57C /* AppDelegate.swift in Sources */,
+				DE5AEAD4293AAD48007E62E8 /* Transaction.swift in Sources */,
+				DE5AEADA293AADBF007E62E8 /* TransactionValue.swift in Sources */,
 				DECD92E7293A987300D0C57C /* SceneDelegate.swift in Sources */,
+				DE5AEAD6293AAD75007E62E8 /* Alias.swift in Sources */,
+				DE5AEAD8293AAD90007E62E8 /* TransactionDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
