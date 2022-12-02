@@ -11,6 +11,9 @@
 		DE5AEAD6293AAD75007E62E8 /* Alias.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEAD5293AAD75007E62E8 /* Alias.swift */; };
 		DE5AEAD8293AAD90007E62E8 /* TransactionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEAD7293AAD90007E62E8 /* TransactionDetail.swift */; };
 		DE5AEADA293AADBF007E62E8 /* TransactionValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEAD9293AADBF007E62E8 /* TransactionValue.swift */; };
+		DE5AEADD293AAF3D007E62E8 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = DE5AEADC293AAF3D007E62E8 /* RxCocoa */; };
+		DE5AEADF293AAF3D007E62E8 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = DE5AEADE293AAF3D007E62E8 /* RxRelay */; };
+		DE5AEAE1293AAF3D007E62E8 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DE5AEAE0293AAF3D007E62E8 /* RxSwift */; };
 		DECD92E5293A987300D0C57C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD92E4293A987300D0C57C /* AppDelegate.swift */; };
 		DECD92E7293A987300D0C57C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD92E6293A987300D0C57C /* SceneDelegate.swift */; };
 		DECD92E9293A987300D0C57C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD92E8293A987300D0C57C /* ViewController.swift */; };
@@ -37,6 +40,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE5AEAE1293AAF3D007E62E8 /* RxSwift in Frameworks */,
+				DE5AEADF293AAF3D007E62E8 /* RxRelay in Frameworks */,
+				DE5AEADD293AAF3D007E62E8 /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +122,11 @@
 			dependencies = (
 			);
 			name = WorldOfPayback;
+			packageProductDependencies = (
+				DE5AEADC293AAF3D007E62E8 /* RxCocoa */,
+				DE5AEADE293AAF3D007E62E8 /* RxRelay */,
+				DE5AEAE0293AAF3D007E62E8 /* RxSwift */,
+			);
 			productName = WorldOfPayback;
 			productReference = DECD92E1293A987300D0C57C /* WorldOfPayback.app */;
 			productType = "com.apple.product-type.application";
@@ -144,6 +155,9 @@
 				Base,
 			);
 			mainGroup = DECD92D8293A987300D0C57C;
+			packageReferences = (
+				DE5AEADB293AAF3D007E62E8 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = DECD92E2293A987300D0C57C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -380,6 +394,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DE5AEADB293AAF3D007E62E8 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DE5AEADC293AAF3D007E62E8 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE5AEADB293AAF3D007E62E8 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		DE5AEADE293AAF3D007E62E8 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE5AEADB293AAF3D007E62E8 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		DE5AEAE0293AAF3D007E62E8 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE5AEADB293AAF3D007E62E8 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DECD92D9293A987300D0C57C /* Project object */;
 }
