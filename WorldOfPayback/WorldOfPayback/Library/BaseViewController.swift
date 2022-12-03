@@ -45,6 +45,7 @@ class BaseViewController: UIViewController {
     // MARK: - View Setup
 
     func setupViewAppereance() {
+        view.backgroundColor = UIColor.Payback.Background.PRIMARY
     }
 
     func setupViewLayout() {

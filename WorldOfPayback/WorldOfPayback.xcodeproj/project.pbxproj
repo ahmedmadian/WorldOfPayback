@@ -29,6 +29,12 @@
 		DE5AEB06293B918E007E62E8 /* RootNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEB05293B918E007E62E8 /* RootNavigationViewController.swift */; };
 		DE5AEB08293B9300007E62E8 /* TransactionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEB07293B9300007E62E8 /* TransactionsViewModel.swift */; };
 		DE5AEB0A293B9375007E62E8 /* TransactionsRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEB09293B9375007E62E8 /* TransactionsRoute.swift */; };
+		DE5AEB0C293B97D7007E62E8 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEB0B293B97D7007E62E8 /* TransactionTableViewCell.swift */; };
+		DE5AEB0E293B9850007E62E8 /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEB0D293B9850007E62E8 /* TransactionViewModel.swift */; };
+		DE5AEB10293BB90C007E62E8 /* CGFloat+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEB0F293BB90C007E62E8 /* CGFloat+Constants.swift */; };
+		DE5AEB12293BC2C7007E62E8 /* UIColor+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEB11293BC2C7007E62E8 /* UIColor+Constants.swift */; };
+		DE5AEB14293BC82B007E62E8 /* UIFont+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEB13293BC82B007E62E8 /* UIFont+Constants.swift */; };
+		DE5AEB16293BE0D2007E62E8 /* DateFormatter+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEB15293BE0D2007E62E8 /* DateFormatter+Helper.swift */; };
 		DECD92E5293A987300D0C57C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD92E4293A987300D0C57C /* AppDelegate.swift */; };
 		DECD92E7293A987300D0C57C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD92E6293A987300D0C57C /* SceneDelegate.swift */; };
 		DECD92EE293A987400D0C57C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DECD92ED293A987400D0C57C /* Assets.xcassets */; };
@@ -55,6 +61,12 @@
 		DE5AEB05293B918E007E62E8 /* RootNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationViewController.swift; sourceTree = "<group>"; };
 		DE5AEB07293B9300007E62E8 /* TransactionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewModel.swift; sourceTree = "<group>"; };
 		DE5AEB09293B9375007E62E8 /* TransactionsRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsRoute.swift; sourceTree = "<group>"; };
+		DE5AEB0B293B97D7007E62E8 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
+		DE5AEB0D293B9850007E62E8 /* TransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
+		DE5AEB0F293BB90C007E62E8 /* CGFloat+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Constants.swift"; sourceTree = "<group>"; };
+		DE5AEB11293BC2C7007E62E8 /* UIColor+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Constants.swift"; sourceTree = "<group>"; };
+		DE5AEB13293BC82B007E62E8 /* UIFont+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Constants.swift"; sourceTree = "<group>"; };
+		DE5AEB15293BE0D2007E62E8 /* DateFormatter+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Helper.swift"; sourceTree = "<group>"; };
 		DECD92E1293A987300D0C57C /* WorldOfPayback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldOfPayback.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DECD92E4293A987300D0C57C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DECD92E6293A987300D0C57C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +144,10 @@
 				DE5AEB03293B9100007E62E8 /* BaseRouter.swift */,
 				DE5AEB05293B918E007E62E8 /* RootNavigationViewController.swift */,
 				DE5AEAF9293B8AB8007E62E8 /* UIView+Helper.swift */,
+				DE5AEB0F293BB90C007E62E8 /* CGFloat+Constants.swift */,
+				DE5AEB11293BC2C7007E62E8 /* UIColor+Constants.swift */,
+				DE5AEB13293BC82B007E62E8 /* UIFont+Constants.swift */,
+				DE5AEB15293BE0D2007E62E8 /* DateFormatter+Helper.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -151,8 +167,18 @@
 				DE5AEAFF293B8F9E007E62E8 /* TransactionsViewController.swift */,
 				DE5AEB07293B9300007E62E8 /* TransactionsViewModel.swift */,
 				DE5AEB09293B9375007E62E8 /* TransactionsRoute.swift */,
+				DE5AEB17293BF3B4007E62E8 /* Cell */,
 			);
 			path = Transactions;
+			sourceTree = "<group>";
+		};
+		DE5AEB17293BF3B4007E62E8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DE5AEB0B293B97D7007E62E8 /* TransactionTableViewCell.swift */,
+				DE5AEB0D293B9850007E62E8 /* TransactionViewModel.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		DECD92D8293A987300D0C57C = {
@@ -284,11 +310,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE5AEB06293B918E007E62E8 /* RootNavigationViewController.swift in Sources */,
+				DE5AEB0C293B97D7007E62E8 /* TransactionTableViewCell.swift in Sources */,
 				DE5AEB08293B9300007E62E8 /* TransactionsViewModel.swift in Sources */,
 				DE5AEAFA293B8AB8007E62E8 /* UIView+Helper.swift in Sources */,
 				DE5AEAF8293B8A89007E62E8 /* BaseViewController.swift in Sources */,
 				DE5AEAE8293B7F96007E62E8 /* JSONFileReaderService.swift in Sources */,
 				DE5AEB0A293B9375007E62E8 /* TransactionsRoute.swift in Sources */,
+				DE5AEB10293BB90C007E62E8 /* CGFloat+Constants.swift in Sources */,
 				DECD92E5293A987300D0C57C /* AppDelegate.swift in Sources */,
 				DE5AEB02293B8FDC007E62E8 /* TransactionsProtocols.swift in Sources */,
 				DE5AEAD4293AAD48007E62E8 /* Transaction.swift in Sources */,
@@ -296,13 +324,17 @@
 				DE5AEADA293AADBF007E62E8 /* TransactionValue.swift in Sources */,
 				DE5AEB04293B9100007E62E8 /* BaseRouter.swift in Sources */,
 				DE5AEAF0293B8750007E62E8 /* LocalTransactionsService.swift in Sources */,
+				DE5AEB12293BC2C7007E62E8 /* UIColor+Constants.swift in Sources */,
+				DE5AEB16293BE0D2007E62E8 /* DateFormatter+Helper.swift in Sources */,
 				DECD92E7293A987300D0C57C /* SceneDelegate.swift in Sources */,
+				DE5AEB0E293B9850007E62E8 /* TransactionViewModel.swift in Sources */,
 				DE5AEAF5293B897B007E62E8 /* TransactionsServiceProtocol.swift in Sources */,
 				DE5AEAFC293B8C25007E62E8 /* BindableType.swift in Sources */,
 				DE5AEAD6293AAD75007E62E8 /* Alias.swift in Sources */,
 				DE5AEAF2293B88B9007E62E8 /* TransactionsResponseModel.swift in Sources */,
 				DE5AEAD8293AAD90007E62E8 /* TransactionDetail.swift in Sources */,
 				DE5AEB00293B8F9E007E62E8 /* TransactionsViewController.swift in Sources */,
+				DE5AEB14293BC82B007E62E8 /* UIFont+Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

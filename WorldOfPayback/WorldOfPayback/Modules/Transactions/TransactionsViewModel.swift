@@ -11,16 +11,22 @@ class TransactionsViewModel: TransactionsViewModelType, TransactionsViewModelInp
     // MARK: - Properties
 
     var viewDidLoad: PublishSubject<Void>
+    var title: Observable<String>
+    var transactions: Observable<[TransactionViewModel]>
     private let router: TransactionsRouteProtocol
 
     // MARK: - Init
 
     init(router: TransactionsRouteProtocol, transactionsService: TransactionsServiceProtocol) {
         viewDidLoad = PublishSubject().asObserver()
+        title = Observable.just("Transactions")
+        transactions = PublishSubject()
         self.router = router
 
-        let transactions = viewDidLoad.flatMapLatest { _ -> Observable<[Transaction]> in
+        transactions = viewDidLoad.flatMapLatest { _ -> Observable<[Transaction]> in
             return transactionsService.fetchTransactions()
-        }
+        }.map({ $0.map { TransactionViewModel(transaction: $0) }
+                .sorted { $0.bookingDate > $1.bookingDate }
+        })
     }
 }

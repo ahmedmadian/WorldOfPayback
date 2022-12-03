@@ -17,6 +17,8 @@ protocol TransactionsViewModelInput {
 }
 
 protocol TransactionsViewModelOutput {
+    var title: Observable<String> { get }
+    var transactions: Observable<[TransactionViewModel]> { get }
 }
 
 extension TransactionsViewModelType where Self: TransactionsViewModelInput & TransactionsViewModelOutput {
