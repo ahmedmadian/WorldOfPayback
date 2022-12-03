@@ -23,6 +23,8 @@
 		DE5AEAF8293B8A89007E62E8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEAF7293B8A89007E62E8 /* BaseViewController.swift */; };
 		DE5AEAFA293B8AB8007E62E8 /* UIView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEAF9293B8AB8007E62E8 /* UIView+Helper.swift */; };
 		DE5AEAFC293B8C25007E62E8 /* BindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEAFB293B8C25007E62E8 /* BindableType.swift */; };
+		DE5AEB04293B9100007E62E8 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEB03293B9100007E62E8 /* BaseRouter.swift */; };
+		DE5AEB06293B918E007E62E8 /* RootNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEB05293B918E007E62E8 /* RootNavigationViewController.swift */; };
 		DECD92E5293A987300D0C57C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD92E4293A987300D0C57C /* AppDelegate.swift */; };
 		DECD92E7293A987300D0C57C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD92E6293A987300D0C57C /* SceneDelegate.swift */; };
 		DECD92EE293A987400D0C57C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DECD92ED293A987400D0C57C /* Assets.xcassets */; };
@@ -43,6 +45,8 @@
 		DE5AEAF7293B8A89007E62E8 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		DE5AEAF9293B8AB8007E62E8 /* UIView+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Helper.swift"; sourceTree = "<group>"; };
 		DE5AEAFB293B8C25007E62E8 /* BindableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableType.swift; sourceTree = "<group>"; };
+		DE5AEB03293B9100007E62E8 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		DE5AEB05293B918E007E62E8 /* RootNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationViewController.swift; sourceTree = "<group>"; };
 		DECD92E1293A987300D0C57C /* WorldOfPayback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldOfPayback.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DECD92E4293A987300D0C57C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DECD92E6293A987300D0C57C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +121,8 @@
 			children = (
 				DE5AEAF7293B8A89007E62E8 /* BaseViewController.swift */,
 				DE5AEAFB293B8C25007E62E8 /* BindableType.swift */,
+				DE5AEB03293B9100007E62E8 /* BaseRouter.swift */,
+				DE5AEB05293B918E007E62E8 /* RootNavigationViewController.swift */,
 				DE5AEAF9293B8AB8007E62E8 /* UIView+Helper.swift */,
 			);
 			path = Library;
@@ -249,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE5AEB06293B918E007E62E8 /* RootNavigationViewController.swift in Sources */,
 				DE5AEAFA293B8AB8007E62E8 /* UIView+Helper.swift in Sources */,
 				DE5AEAF8293B8A89007E62E8 /* BaseViewController.swift in Sources */,
 				DE5AEAE8293B7F96007E62E8 /* JSONFileReaderService.swift in Sources */,
@@ -256,6 +263,7 @@
 				DE5AEAD4293AAD48007E62E8 /* Transaction.swift in Sources */,
 				DE5AEAEA293B805F007E62E8 /* JSONFileReaderServiceError.swift in Sources */,
 				DE5AEADA293AADBF007E62E8 /* TransactionValue.swift in Sources */,
+				DE5AEB04293B9100007E62E8 /* BaseRouter.swift in Sources */,
 				DE5AEAF0293B8750007E62E8 /* LocalTransactionsService.swift in Sources */,
 				DECD92E7293A987300D0C57C /* SceneDelegate.swift in Sources */,
 				DE5AEAF5293B897B007E62E8 /* TransactionsServiceProtocol.swift in Sources */,
