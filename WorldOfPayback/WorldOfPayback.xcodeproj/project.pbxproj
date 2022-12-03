@@ -23,8 +23,12 @@
 		DE5AEAF8293B8A89007E62E8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEAF7293B8A89007E62E8 /* BaseViewController.swift */; };
 		DE5AEAFA293B8AB8007E62E8 /* UIView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEAF9293B8AB8007E62E8 /* UIView+Helper.swift */; };
 		DE5AEAFC293B8C25007E62E8 /* BindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEAFB293B8C25007E62E8 /* BindableType.swift */; };
+		DE5AEB00293B8F9E007E62E8 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEAFF293B8F9E007E62E8 /* TransactionsViewController.swift */; };
+		DE5AEB02293B8FDC007E62E8 /* TransactionsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEB01293B8FDC007E62E8 /* TransactionsProtocols.swift */; };
 		DE5AEB04293B9100007E62E8 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEB03293B9100007E62E8 /* BaseRouter.swift */; };
 		DE5AEB06293B918E007E62E8 /* RootNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEB05293B918E007E62E8 /* RootNavigationViewController.swift */; };
+		DE5AEB08293B9300007E62E8 /* TransactionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEB07293B9300007E62E8 /* TransactionsViewModel.swift */; };
+		DE5AEB0A293B9375007E62E8 /* TransactionsRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEB09293B9375007E62E8 /* TransactionsRoute.swift */; };
 		DECD92E5293A987300D0C57C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD92E4293A987300D0C57C /* AppDelegate.swift */; };
 		DECD92E7293A987300D0C57C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD92E6293A987300D0C57C /* SceneDelegate.swift */; };
 		DECD92EE293A987400D0C57C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DECD92ED293A987400D0C57C /* Assets.xcassets */; };
@@ -45,8 +49,12 @@
 		DE5AEAF7293B8A89007E62E8 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		DE5AEAF9293B8AB8007E62E8 /* UIView+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Helper.swift"; sourceTree = "<group>"; };
 		DE5AEAFB293B8C25007E62E8 /* BindableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableType.swift; sourceTree = "<group>"; };
+		DE5AEAFF293B8F9E007E62E8 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
+		DE5AEB01293B8FDC007E62E8 /* TransactionsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsProtocols.swift; sourceTree = "<group>"; };
 		DE5AEB03293B9100007E62E8 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
 		DE5AEB05293B918E007E62E8 /* RootNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationViewController.swift; sourceTree = "<group>"; };
+		DE5AEB07293B9300007E62E8 /* TransactionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewModel.swift; sourceTree = "<group>"; };
+		DE5AEB09293B9375007E62E8 /* TransactionsRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsRoute.swift; sourceTree = "<group>"; };
 		DECD92E1293A987300D0C57C /* WorldOfPayback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldOfPayback.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DECD92E4293A987300D0C57C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DECD92E6293A987300D0C57C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +136,25 @@
 			path = Library;
 			sourceTree = "<group>";
 		};
+		DE5AEAFD293B8F6C007E62E8 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				DE5AEAFE293B8F7F007E62E8 /* Transactions */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		DE5AEAFE293B8F7F007E62E8 /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				DE5AEB01293B8FDC007E62E8 /* TransactionsProtocols.swift */,
+				DE5AEAFF293B8F9E007E62E8 /* TransactionsViewController.swift */,
+				DE5AEB07293B9300007E62E8 /* TransactionsViewModel.swift */,
+				DE5AEB09293B9375007E62E8 /* TransactionsRoute.swift */,
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
 		DECD92D8293A987300D0C57C = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +174,7 @@
 		DECD92E3293A987300D0C57C /* WorldOfPayback */ = {
 			isa = PBXGroup;
 			children = (
+				DE5AEAFD293B8F6C007E62E8 /* Modules */,
 				DE5AEAF6293B8A77007E62E8 /* Library */,
 				DE5AEAE4293B7EA8007E62E8 /* Services */,
 				DE5AEAD2293AAD2B007E62E8 /* Model */,
@@ -256,10 +284,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE5AEB06293B918E007E62E8 /* RootNavigationViewController.swift in Sources */,
+				DE5AEB08293B9300007E62E8 /* TransactionsViewModel.swift in Sources */,
 				DE5AEAFA293B8AB8007E62E8 /* UIView+Helper.swift in Sources */,
 				DE5AEAF8293B8A89007E62E8 /* BaseViewController.swift in Sources */,
 				DE5AEAE8293B7F96007E62E8 /* JSONFileReaderService.swift in Sources */,
+				DE5AEB0A293B9375007E62E8 /* TransactionsRoute.swift in Sources */,
 				DECD92E5293A987300D0C57C /* AppDelegate.swift in Sources */,
+				DE5AEB02293B8FDC007E62E8 /* TransactionsProtocols.swift in Sources */,
 				DE5AEAD4293AAD48007E62E8 /* Transaction.swift in Sources */,
 				DE5AEAEA293B805F007E62E8 /* JSONFileReaderServiceError.swift in Sources */,
 				DE5AEADA293AADBF007E62E8 /* TransactionValue.swift in Sources */,
@@ -271,6 +302,7 @@
 				DE5AEAD6293AAD75007E62E8 /* Alias.swift in Sources */,
 				DE5AEAF2293B88B9007E62E8 /* TransactionsResponseModel.swift in Sources */,
 				DE5AEAD8293AAD90007E62E8 /* TransactionDetail.swift in Sources */,
+				DE5AEB00293B8F9E007E62E8 /* TransactionsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
