@@ -26,7 +26,6 @@ class TransactionsViewController: BaseViewController, BindableType {
         tableView.separatorStyle = .none
         tableView.showsVerticalScrollIndicator = false
         tableView.showsHorizontalScrollIndicator = false
-        tableView.allowsSelection = false
         tableView.rowHeight = UITableView.automaticDimension
         tableView.register(TransactionTableViewCell.self,
                            forCellReuseIdentifier: TransactionTableViewCell.Constants.REUSE_IDENTIFIER)
@@ -77,5 +76,9 @@ class TransactionsViewController: BaseViewController, BindableType {
                                                      cellType: TransactionTableViewCell.self)) { item, viewModel, cell in
                 cell.bind(to: viewModel)
             }.disposed(by: disposeBag)
+
+        transactionsTableView.rx.modelSelected(TransactionViewModel.self)
+            .bind(to: viewModel.input.modelSelected)
+            .disposed(by: disposeBag)
     }
 }

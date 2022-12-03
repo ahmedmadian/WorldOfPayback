@@ -14,6 +14,7 @@ protocol TransactionsViewModelType {
 
 protocol TransactionsViewModelInput {
     var viewDidLoad: PublishSubject<Void> { get }
+    var modelSelected: PublishSubject<TransactionViewModel> { get }
 }
 
 protocol TransactionsViewModelOutput {

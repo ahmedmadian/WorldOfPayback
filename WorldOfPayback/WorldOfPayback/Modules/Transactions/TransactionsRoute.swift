@@ -6,8 +6,14 @@
 //
 
 import Foundation
+import RxSwift
+
+enum TransactionsNavigationOptions {
+    case detail(TransactionViewModel)
+}
 
 protocol TransactionsRouteProtocol: AnyObject {
+    func navigate(to option: TransactionsNavigationOptions)
 }
 
 class TransactionsRoute: BaseRoute, TransactionsRouteProtocol {
@@ -21,5 +27,14 @@ class TransactionsRoute: BaseRoute, TransactionsRouteProtocol {
         let localTransactionsService = LocalTransactionsService()
         let viewModel = TransactionsViewModel(router: self, transactionsService: localTransactionsService)
         viewController.bind(to: viewModel)
+    }
+
+    // MARK: - TransactionsRouteProtocol
+    func navigate(to option: TransactionsNavigationOptions) {
+        switch option {
+        case .detail(let transaction):
+            let transactionDetailRoute = TransactionDetailRoute(transaction: Observable.just(transaction))
+            self.navigationController?.push(transactionDetailRoute)
+        }
     }
 }

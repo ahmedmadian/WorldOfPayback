@@ -39,7 +39,7 @@ class TransactionTableViewCell: UITableViewCell, BindableType {
 
     private lazy var descriptionLabel: UILabel = {
         let label = UILabel()
-        label.textColor = UIColor.Payback.Text.text_secondary
+        label.textColor = UIColor.Payback.Text.TEXT_SECONDARY
         label.numberOfLines = .zero
         label.font = .preferredFont(forTextStyle: .caption1)
         return label
@@ -64,7 +64,7 @@ class TransactionTableViewCell: UITableViewCell, BindableType {
     }()
 
     private lazy var bookingDateImageView: UIImageView = {
-        let image = UIImage(named: "calendar")?.withTintColor(UIColor.Payback.Text.text_secondary)
+        let image = UIImage(named: "calendar")?.withTintColor(UIColor.Payback.Text.TEXT_SECONDARY)
         let imageView = UIImageView(image: image)
         return imageView
     }()
@@ -72,7 +72,7 @@ class TransactionTableViewCell: UITableViewCell, BindableType {
     private lazy var bookingDateLabel: UILabel = {
         let label = UILabel()
         label.font = .preferredFont(forTextStyle: .caption1)
-        label.textColor = UIColor.Payback.Text.text_secondary
+        label.textColor = UIColor.Payback.Text.TEXT_SECONDARY
         return label
     }()
 
@@ -101,6 +101,7 @@ class TransactionTableViewCell: UITableViewCell, BindableType {
     // MARK: - View Setup
 
     private func setupViewAppereance() {
+        selectionStyle = .none
         backgroundColor = UIColor.Payback.Background.PRIMARY
     }
 
