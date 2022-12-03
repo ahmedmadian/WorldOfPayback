@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Transaction {
+struct Transaction: Codable {
     let partnerDisplayName: String
     let alias: Alias
     let category: Int

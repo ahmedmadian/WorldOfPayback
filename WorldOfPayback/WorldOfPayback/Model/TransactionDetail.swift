@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct TransactionDetail {
+struct TransactionDetail: Codable {
     let description: String?
     let bookingDate: String
     let value: TransactionValue

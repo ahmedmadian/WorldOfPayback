@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct Alias {
+struct Alias: Codable {
     let reference: String
 }

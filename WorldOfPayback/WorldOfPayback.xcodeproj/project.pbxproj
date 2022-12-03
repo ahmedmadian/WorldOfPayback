@@ -17,6 +17,9 @@
 		DE5AEAE3293AB05F007E62E8 /* PBTransactions.json in Resources */ = {isa = PBXBuildFile; fileRef = DE5AEAE2293AB05F007E62E8 /* PBTransactions.json */; };
 		DE5AEAE8293B7F96007E62E8 /* JSONFileReaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEAE7293B7F96007E62E8 /* JSONFileReaderService.swift */; };
 		DE5AEAEA293B805F007E62E8 /* JSONFileReaderServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEAE9293B805F007E62E8 /* JSONFileReaderServiceError.swift */; };
+		DE5AEAF0293B8750007E62E8 /* LocalTransactionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEAEF293B8750007E62E8 /* LocalTransactionsService.swift */; };
+		DE5AEAF2293B88B9007E62E8 /* TransactionsResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEAF1293B88B9007E62E8 /* TransactionsResponseModel.swift */; };
+		DE5AEAF5293B897B007E62E8 /* TransactionsServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEAF4293B897B007E62E8 /* TransactionsServiceProtocol.swift */; };
 		DECD92E5293A987300D0C57C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD92E4293A987300D0C57C /* AppDelegate.swift */; };
 		DECD92E7293A987300D0C57C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD92E6293A987300D0C57C /* SceneDelegate.swift */; };
 		DECD92E9293A987300D0C57C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD92E8293A987300D0C57C /* ViewController.swift */; };
@@ -32,6 +35,9 @@
 		DE5AEAE2293AB05F007E62E8 /* PBTransactions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PBTransactions.json; sourceTree = "<group>"; };
 		DE5AEAE7293B7F96007E62E8 /* JSONFileReaderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFileReaderService.swift; sourceTree = "<group>"; };
 		DE5AEAE9293B805F007E62E8 /* JSONFileReaderServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFileReaderServiceError.swift; sourceTree = "<group>"; };
+		DE5AEAEF293B8750007E62E8 /* LocalTransactionsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalTransactionsService.swift; sourceTree = "<group>"; };
+		DE5AEAF1293B88B9007E62E8 /* TransactionsResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsResponseModel.swift; sourceTree = "<group>"; };
+		DE5AEAF4293B897B007E62E8 /* TransactionsServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsServiceProtocol.swift; sourceTree = "<group>"; };
 		DECD92E1293A987300D0C57C /* WorldOfPayback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldOfPayback.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DECD92E4293A987300D0C57C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DECD92E6293A987300D0C57C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,7 +75,8 @@
 		DE5AEAE4293B7EA8007E62E8 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				DE5AEAED293B8651007E62E8 /* JSONFileReaderService */,
+				DE5AEAEE293B872F007E62E8 /* BaseServices */,
+				DE5AEAF3293B8953007E62E8 /* TransactionsService */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -81,6 +88,24 @@
 				DE5AEAE9293B805F007E62E8 /* JSONFileReaderServiceError.swift */,
 			);
 			path = JSONFileReaderService;
+			sourceTree = "<group>";
+		};
+		DE5AEAEE293B872F007E62E8 /* BaseServices */ = {
+			isa = PBXGroup;
+			children = (
+				DE5AEAED293B8651007E62E8 /* JSONFileReaderService */,
+			);
+			path = BaseServices;
+			sourceTree = "<group>";
+		};
+		DE5AEAF3293B8953007E62E8 /* TransactionsService */ = {
+			isa = PBXGroup;
+			children = (
+				DE5AEAF4293B897B007E62E8 /* TransactionsServiceProtocol.swift */,
+				DE5AEAEF293B8750007E62E8 /* LocalTransactionsService.swift */,
+				DE5AEAF1293B88B9007E62E8 /* TransactionsResponseModel.swift */,
+			);
+			path = TransactionsService;
 			sourceTree = "<group>";
 		};
 		DECD92D8293A987300D0C57C = {
@@ -216,8 +241,11 @@
 				DE5AEAD4293AAD48007E62E8 /* Transaction.swift in Sources */,
 				DE5AEAEA293B805F007E62E8 /* JSONFileReaderServiceError.swift in Sources */,
 				DE5AEADA293AADBF007E62E8 /* TransactionValue.swift in Sources */,
+				DE5AEAF0293B8750007E62E8 /* LocalTransactionsService.swift in Sources */,
 				DECD92E7293A987300D0C57C /* SceneDelegate.swift in Sources */,
+				DE5AEAF5293B897B007E62E8 /* TransactionsServiceProtocol.swift in Sources */,
 				DE5AEAD6293AAD75007E62E8 /* Alias.swift in Sources */,
+				DE5AEAF2293B88B9007E62E8 /* TransactionsResponseModel.swift in Sources */,
 				DE5AEAD8293AAD90007E62E8 /* TransactionDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
