@@ -22,6 +22,7 @@
 		DE5AEAF5293B897B007E62E8 /* TransactionsServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEAF4293B897B007E62E8 /* TransactionsServiceProtocol.swift */; };
 		DE5AEAF8293B8A89007E62E8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEAF7293B8A89007E62E8 /* BaseViewController.swift */; };
 		DE5AEAFA293B8AB8007E62E8 /* UIView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEAF9293B8AB8007E62E8 /* UIView+Helper.swift */; };
+		DE5AEAFC293B8C25007E62E8 /* BindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEAFB293B8C25007E62E8 /* BindableType.swift */; };
 		DECD92E5293A987300D0C57C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD92E4293A987300D0C57C /* AppDelegate.swift */; };
 		DECD92E7293A987300D0C57C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD92E6293A987300D0C57C /* SceneDelegate.swift */; };
 		DECD92EE293A987400D0C57C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DECD92ED293A987400D0C57C /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 		DE5AEAF4293B897B007E62E8 /* TransactionsServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsServiceProtocol.swift; sourceTree = "<group>"; };
 		DE5AEAF7293B8A89007E62E8 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		DE5AEAF9293B8AB8007E62E8 /* UIView+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Helper.swift"; sourceTree = "<group>"; };
+		DE5AEAFB293B8C25007E62E8 /* BindableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableType.swift; sourceTree = "<group>"; };
 		DECD92E1293A987300D0C57C /* WorldOfPayback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldOfPayback.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DECD92E4293A987300D0C57C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DECD92E6293A987300D0C57C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				DE5AEAF7293B8A89007E62E8 /* BaseViewController.swift */,
+				DE5AEAFB293B8C25007E62E8 /* BindableType.swift */,
 				DE5AEAF9293B8AB8007E62E8 /* UIView+Helper.swift */,
 			);
 			path = Library;
@@ -256,6 +259,7 @@
 				DE5AEAF0293B8750007E62E8 /* LocalTransactionsService.swift in Sources */,
 				DECD92E7293A987300D0C57C /* SceneDelegate.swift in Sources */,
 				DE5AEAF5293B897B007E62E8 /* TransactionsServiceProtocol.swift in Sources */,
+				DE5AEAFC293B8C25007E62E8 /* BindableType.swift in Sources */,
 				DE5AEAD6293AAD75007E62E8 /* Alias.swift in Sources */,
 				DE5AEAF2293B88B9007E62E8 /* TransactionsResponseModel.swift in Sources */,
 				DE5AEAD8293AAD90007E62E8 /* TransactionDetail.swift in Sources */,
