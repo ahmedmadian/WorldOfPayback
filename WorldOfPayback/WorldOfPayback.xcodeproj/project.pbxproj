@@ -20,9 +20,10 @@
 		DE5AEAF0293B8750007E62E8 /* LocalTransactionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEAEF293B8750007E62E8 /* LocalTransactionsService.swift */; };
 		DE5AEAF2293B88B9007E62E8 /* TransactionsResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEAF1293B88B9007E62E8 /* TransactionsResponseModel.swift */; };
 		DE5AEAF5293B897B007E62E8 /* TransactionsServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEAF4293B897B007E62E8 /* TransactionsServiceProtocol.swift */; };
+		DE5AEAF8293B8A89007E62E8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEAF7293B8A89007E62E8 /* BaseViewController.swift */; };
+		DE5AEAFA293B8AB8007E62E8 /* UIView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEAF9293B8AB8007E62E8 /* UIView+Helper.swift */; };
 		DECD92E5293A987300D0C57C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD92E4293A987300D0C57C /* AppDelegate.swift */; };
 		DECD92E7293A987300D0C57C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD92E6293A987300D0C57C /* SceneDelegate.swift */; };
-		DECD92E9293A987300D0C57C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD92E8293A987300D0C57C /* ViewController.swift */; };
 		DECD92EE293A987400D0C57C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DECD92ED293A987400D0C57C /* Assets.xcassets */; };
 		DECD92F1293A987400D0C57C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DECD92EF293A987400D0C57C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -38,10 +39,11 @@
 		DE5AEAEF293B8750007E62E8 /* LocalTransactionsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalTransactionsService.swift; sourceTree = "<group>"; };
 		DE5AEAF1293B88B9007E62E8 /* TransactionsResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsResponseModel.swift; sourceTree = "<group>"; };
 		DE5AEAF4293B897B007E62E8 /* TransactionsServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsServiceProtocol.swift; sourceTree = "<group>"; };
+		DE5AEAF7293B8A89007E62E8 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		DE5AEAF9293B8AB8007E62E8 /* UIView+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Helper.swift"; sourceTree = "<group>"; };
 		DECD92E1293A987300D0C57C /* WorldOfPayback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldOfPayback.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DECD92E4293A987300D0C57C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DECD92E6293A987300D0C57C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DECD92E8293A987300D0C57C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DECD92ED293A987400D0C57C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DECD92F0293A987400D0C57C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DECD92F2293A987400D0C57C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -108,6 +110,15 @@
 			path = TransactionsService;
 			sourceTree = "<group>";
 		};
+		DE5AEAF6293B8A77007E62E8 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				DE5AEAF7293B8A89007E62E8 /* BaseViewController.swift */,
+				DE5AEAF9293B8AB8007E62E8 /* UIView+Helper.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
 		DECD92D8293A987300D0C57C = {
 			isa = PBXGroup;
 			children = (
@@ -127,7 +138,7 @@
 		DECD92E3293A987300D0C57C /* WorldOfPayback */ = {
 			isa = PBXGroup;
 			children = (
-				DECD92E8293A987300D0C57C /* ViewController.swift */,
+				DE5AEAF6293B8A77007E62E8 /* Library */,
 				DE5AEAE4293B7EA8007E62E8 /* Services */,
 				DE5AEAD2293AAD2B007E62E8 /* Model */,
 				DECD92F8293A995200D0C57C /* Application */,
@@ -235,8 +246,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE5AEAFA293B8AB8007E62E8 /* UIView+Helper.swift in Sources */,
+				DE5AEAF8293B8A89007E62E8 /* BaseViewController.swift in Sources */,
 				DE5AEAE8293B7F96007E62E8 /* JSONFileReaderService.swift in Sources */,
-				DECD92E9293A987300D0C57C /* ViewController.swift in Sources */,
 				DECD92E5293A987300D0C57C /* AppDelegate.swift in Sources */,
 				DE5AEAD4293AAD48007E62E8 /* Transaction.swift in Sources */,
 				DE5AEAEA293B805F007E62E8 /* JSONFileReaderServiceError.swift in Sources */,
