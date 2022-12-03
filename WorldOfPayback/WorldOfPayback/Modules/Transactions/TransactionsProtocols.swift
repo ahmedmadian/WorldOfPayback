@@ -13,6 +13,7 @@ protocol TransactionsViewModelType {
 }
 
 protocol TransactionsViewModelInput {
+    var viewDidLoad: PublishSubject<Void> { get }
 }
 
 protocol TransactionsViewModelOutput {

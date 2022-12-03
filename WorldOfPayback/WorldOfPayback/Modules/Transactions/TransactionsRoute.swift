@@ -18,7 +18,8 @@ class TransactionsRoute: BaseRoute, TransactionsRouteProtocol {
 
         super.init(viewController: viewController)
 
-        let viewModel = TransactionsViewModel(router: self)
+        let localTransactionsService = LocalTransactionsService()
+        let viewModel = TransactionsViewModel(router: self, transactionsService: localTransactionsService)
         viewController.bind(to: viewModel)
     }
 }
