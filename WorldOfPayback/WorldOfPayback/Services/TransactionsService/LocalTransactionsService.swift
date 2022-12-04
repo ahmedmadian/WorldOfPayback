@@ -21,7 +21,17 @@ class LocalTransactionsService: JSONFileReaderService {
 extension LocalTransactionsService: TransactionsServiceProtocol {
     func fetchTransactions() -> Observable<[Transaction]> {
         let responseModel: Observable<TransactionsResponseModel> = self.execute()
-        return responseModel.map { $0.items }
-            .delay(.seconds(3), scheduler: MainScheduler.instance)
+
+        let randomFlag = Bool.random()
+
+        if randomFlag {
+            return responseModel.map { $0.items }
+                .delay(.seconds(2), scheduler: MainScheduler.instance)
+        } else {
+            return Observable.create { observer in
+                observer.onError(JSONFileReaderServiceError.failureTest)
+                return Disposables.create()
+            }
+        }
     }
 }

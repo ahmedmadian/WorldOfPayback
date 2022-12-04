@@ -15,6 +15,7 @@ class TransactionsViewModel: TransactionsViewModelType, TransactionsViewModelInp
     var transactions: Observable<[TransactionViewModel]>
     var modelSelected: PublishSubject<TransactionViewModel>
     var isLoading: Observable<Bool>
+    private let errorMessage: PublishSubject<String>
     private let router: TransactionsRouteProtocol
 
     // MARK: - Init
@@ -25,6 +26,7 @@ class TransactionsViewModel: TransactionsViewModelType, TransactionsViewModelInp
         transactions = PublishSubject()
         modelSelected = PublishSubject()
         isLoading = Observable.empty()
+        errorMessage = PublishSubject()
         self.router = router
 
         let activityIndicator = ActivityIndicator()
@@ -32,7 +34,10 @@ class TransactionsViewModel: TransactionsViewModelType, TransactionsViewModelInp
 
         transactions = viewDidLoad.flatMapLatest { _ -> Observable<[Transaction]> in
             return transactionsService.fetchTransactions()
-                .trackActivity(activityIndicator)
+                .catch({[weak self] in
+                    self?.errorMessage.onNext($0.localizedDescription)
+                    return Observable.empty()
+                }).trackActivity(activityIndicator)
         }.map({ $0.map { TransactionViewModel(transaction: $0) }
                 .sorted { $0.bookingDate > $1.bookingDate }
         })
@@ -41,5 +46,10 @@ class TransactionsViewModel: TransactionsViewModelType, TransactionsViewModelInp
             router.navigate(to: .detail($0))
         })
 
+        _ = errorMessage
+            .observe(on: MainScheduler.instance)
+            .subscribe(onNext: {
+                self.router.showErrorAlert(with: $0)
+            })
     }
 }

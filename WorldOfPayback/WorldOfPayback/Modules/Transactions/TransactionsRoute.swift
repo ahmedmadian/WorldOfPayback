@@ -12,7 +12,7 @@ enum TransactionsNavigationOptions {
     case detail(TransactionViewModel)
 }
 
-protocol TransactionsRouteProtocol: AnyObject {
+protocol TransactionsRouteProtocol: RouterProtocol {
     func navigate(to option: TransactionsNavigationOptions)
 }
 

@@ -11,6 +11,7 @@ enum JSONFileReaderServiceError: LocalizedError {
     case fileNotFound
     case parsingError
     case noDataAvailable
+    case failureTest
 
     var errorDescription: String? {
         switch self {
@@ -20,6 +21,8 @@ enum JSONFileReaderServiceError: LocalizedError {
             return "JSON Parsing Failure"
         case .noDataAvailable:
             return "No data avaliable"
+        case .failureTest:
+            return "Failure test"
         }
     }
 }
