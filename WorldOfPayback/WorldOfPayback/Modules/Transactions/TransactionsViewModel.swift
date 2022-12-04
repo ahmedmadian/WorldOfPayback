@@ -6,6 +6,7 @@
 //
 
 import RxSwift
+import Network
 
 class TransactionsViewModel: TransactionsViewModelType, TransactionsViewModelInput, TransactionsViewModelOutput {
     // MARK: - Properties
@@ -50,6 +51,15 @@ class TransactionsViewModel: TransactionsViewModelType, TransactionsViewModelInp
             .observe(on: MainScheduler.instance)
             .subscribe(onNext: {
                 self.router.showErrorAlert(with: $0)
+            })
+
+        _ = NWPathMonitor().rx_path
+            .map { $0.status == .satisfied }
+            .observe(on: MainScheduler.instance)
+            .subscribe(onNext: { [weak self] connected in
+                if !connected {
+                    self?.router.showErrorAlert(with: "No Internet")
+                }
             })
     }
 }

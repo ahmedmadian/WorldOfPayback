@@ -40,6 +40,7 @@
 		DE5AEB1E293BFC01007E62E8 /* TransactionDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEB1D293BFC01007E62E8 /* TransactionDetailProtocols.swift */; };
 		DE5AEB20293BFC34007E62E8 /* TransactionDetailRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEB1F293BFC34007E62E8 /* TransactionDetailRoute.swift */; };
 		DE5AEB32293D16AD007E62E8 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEB31293D16AD007E62E8 /* ActivityIndicator.swift */; };
+		DE5AEB37293D396B007E62E8 /* NWPathMonitor+rx_path.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AEB36293D396B007E62E8 /* NWPathMonitor+rx_path.swift */; };
 		DECD92E5293A987300D0C57C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD92E4293A987300D0C57C /* AppDelegate.swift */; };
 		DECD92E7293A987300D0C57C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD92E6293A987300D0C57C /* SceneDelegate.swift */; };
 		DECD92EE293A987400D0C57C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DECD92ED293A987400D0C57C /* Assets.xcassets */; };
@@ -77,6 +78,7 @@
 		DE5AEB1D293BFC01007E62E8 /* TransactionDetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailProtocols.swift; sourceTree = "<group>"; };
 		DE5AEB1F293BFC34007E62E8 /* TransactionDetailRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailRoute.swift; sourceTree = "<group>"; };
 		DE5AEB31293D16AD007E62E8 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		DE5AEB36293D396B007E62E8 /* NWPathMonitor+rx_path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NWPathMonitor+rx_path.swift"; sourceTree = "<group>"; };
 		DECD92E1293A987300D0C57C /* WorldOfPayback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldOfPayback.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DECD92E4293A987300D0C57C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DECD92E6293A987300D0C57C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				DE5AEB13293BC82B007E62E8 /* UIFont+Constants.swift */,
 				DE5AEB15293BE0D2007E62E8 /* DateFormatter+Helper.swift */,
 				DE5AEB31293D16AD007E62E8 /* ActivityIndicator.swift */,
+				DE5AEB36293D396B007E62E8 /* NWPathMonitor+rx_path.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				DE5AEB0A293B9375007E62E8 /* TransactionsRoute.swift in Sources */,
 				DE5AEB10293BB90C007E62E8 /* CGFloat+Constants.swift in Sources */,
 				DECD92E5293A987300D0C57C /* AppDelegate.swift in Sources */,
+				DE5AEB37293D396B007E62E8 /* NWPathMonitor+rx_path.swift in Sources */,
 				DE5AEB02293B8FDC007E62E8 /* TransactionsProtocols.swift in Sources */,
 				DE5AEAD4293AAD48007E62E8 /* Transaction.swift in Sources */,
 				DE5AEAEA293B805F007E62E8 /* JSONFileReaderServiceError.swift in Sources */,
