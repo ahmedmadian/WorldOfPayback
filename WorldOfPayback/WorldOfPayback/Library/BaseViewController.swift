@@ -13,6 +13,7 @@ class BaseViewController: UIViewController {
     private(set) lazy var activity: UIActivityIndicatorView = {
         let activity = UIActivityIndicatorView()
         activity.style = .large
+        activity.color = UIColor.Payback.Background.SURFACE
         view.addSubview(activity, translatesAutoresizingMaskIntoConstraints: false)
 
         NSLayoutConstraint.activate([

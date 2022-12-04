@@ -22,5 +22,6 @@ extension LocalTransactionsService: TransactionsServiceProtocol {
     func fetchTransactions() -> Observable<[Transaction]> {
         let responseModel: Observable<TransactionsResponseModel> = self.execute()
         return responseModel.map { $0.items }
+            .delay(.seconds(3), scheduler: MainScheduler.instance)
     }
 }

@@ -80,5 +80,15 @@ class TransactionsViewController: BaseViewController, BindableType {
         transactionsTableView.rx.modelSelected(TransactionViewModel.self)
             .bind(to: viewModel.input.modelSelected)
             .disposed(by: disposeBag)
+
+        viewModel.output.isLoading
+            .observe(on: MainScheduler.instance)
+            .subscribe(onNext: { [weak self] (isLoading) in
+                if isLoading {
+                    self?.showLoader()
+                } else {
+                    self?.hideLoader()
+                }
+            }).disposed(by: disposeBag)
     }
 }
